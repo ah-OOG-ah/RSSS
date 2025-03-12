@@ -2,7 +2,7 @@
 name = "rust_shader"
 version = "0.0.1"
 authors = ["ah-OOG-ah"]
-edition = "2024"
+edition = "2021"
 license = "LGPL-3.0-or-later"
 build = "build.rs"
 publish = false
@@ -11,4 +11,4 @@ publish = false
 crate-type = ["dylib"]
 
 [build-dependencies]
-spirv-builder = "0.9"
+spirv-builder = "0.9.0"
