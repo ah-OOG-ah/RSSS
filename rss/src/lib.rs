@@ -1,4 +1,9 @@
-#![no_std]
+// rustc is a little dumb and tries to compile this to native
+// only set nostd and co when targeting spirv
+#![cfg_attr(
+  target_arch = "spirv",
+  no_std
+)]
 
 use spirv_std::spirv;
 use spirv_std::glam::{vec4, Vec4};
